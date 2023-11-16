@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+flex-direction: column;
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 378px;
+
+}
+
+.card {
+  display: flex;
+  margin: auto;
+}
+
+.card-item {
+  padding: 0 5px 0 5px;
+}
+
+.count{
+
+  font-weight :900;
+  font-size :40px;
+  line-height :44px
+
+}
+.card-item:nth-child(odd) .bottom > .count{
+  color: #FF6060;
+}
+.card-item:nth-child(even) .top > .count{
+  color: #FFDC60;;
+}
+.card-item > div {
+  width: 196px;
+  height: 148px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+.card-item > div >img{
+  width: 84px;
+}
+
+.card-item:nth-child(odd) .top {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: #FF6060;
+  justify-content: center;
+  align-items: center;
+}
+.card-item:nth-child(even) .top {
+  justify-content: flex-end;
+}
+
+.card-item:nth-child(even) .bottom {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-color: #FFDC60;
+  justify-content: center;
+  align-items: center;
+}
+.alert{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.alert-item{
+  width: 306px;
+  height: 148px;
+  border-radius: 70px;
+  background-size: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.alert-item:first-child{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.alert-item:last-child{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.img img{
+  width: 30px;
+}
+.content{
+  width: 120px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+}
+.alert-item:nth-child(odd) .content{
+  color: #FFDC60;
+
+}
+.alert-item:nth-child(odd) .img{
+  background-color: #FFDC60;
+}
+.alert-item:nth-child(even) .content{
+  color: #FF6060;
+}
+.alert-item:nth-child(even) .img{
+  background-color: #FF6060;
+}
+
+.revers .alert-item:nth-child(odd) .content{
+  color: #FF6060;
+
+}
+.revers .alert-item:nth-child(odd) .img{
+  background-color: #FF6060;
+}
+.revers .alert-item:nth-child(even) .content{
+  color: #FFDC60;
+}
+.revers .alert-item:nth-child(even) .img{
+  background-color: #FFDC60;
+}
+
